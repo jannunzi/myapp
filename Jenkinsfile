@@ -9,7 +9,7 @@ pipeline {
         stage("Deploy") {
             steps {
                 sh 'git remote add heroku https://git.heroku.com/ancient-journey-88701.git'
-                sh 'git push heroku'
+                sh 'git push heroku master'
             }
         }
     }
